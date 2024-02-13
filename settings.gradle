@@ -4,6 +4,7 @@ include 'bundle-lwjgl'
 include 'platform-model'
 include 'platform-ui'
 include 'decima-model'
+include 'decima-model-rtti'
 include 'decima-ui'
 include 'decima-ext-model-exporter'
 include 'decima-ext-model-viewer'
@@ -15,6 +16,7 @@ project(':bundle-lwjgl').projectDir = new File('modules/bundle-lwjgl')
 project(':platform-model').projectDir = new File('modules/platform-model')
 project(':platform-ui').projectDir = new File('modules/platform-ui')
 project(':decima-model').projectDir = new File('modules/decima-model')
+project(':decima-model-rtti').projectDir = new File('modules/decima-model-rtti')
 project(':decima-ui').projectDir = new File('modules/decima-ui')
 
 project(':decima-ext-model-exporter').projectDir = new File('modules/decima-ext-model-exporter')
