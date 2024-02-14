@@ -14,7 +14,9 @@ public sealed interface RTTI<T> permits RTTIDataAtom, RTTIDataCompound, RTTIData
     String getName();
 
     @NotNull
-    String getFullName();
+    default String getFullName() {
+        return getName();
+    }
 
     @NotNull
     Class<T> getInstanceType();

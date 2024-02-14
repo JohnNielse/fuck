@@ -19,5 +19,11 @@ public non-sealed interface RTTIDataEnum extends RTTI<RTTIDataEnum.Value> {
     Value valueOf(int value);
 
     @NotNull
-    List<Value> getValues();
+    List<? extends Value> getValues();
+
+    @NotNull
+    @Override
+    default Class<Value> getInstanceType() {
+        return Value.class;
+    }
 }

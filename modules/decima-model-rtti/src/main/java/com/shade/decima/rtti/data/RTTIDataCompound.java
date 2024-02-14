@@ -24,8 +24,14 @@ public non-sealed interface RTTIDataCompound extends RTTI<RTTICompound> {
     }
 
     @NotNull
-    List<Base> getBases();
+    List<? extends Base> getBases();
 
     @NotNull
-    List<Attr<?>> getAttrs();
+    List<? extends Attr<?>> getAttrs();
+
+    @NotNull
+    @Override
+    default Class<RTTICompound> getInstanceType() {
+        return RTTICompound.class;
+    }
 }

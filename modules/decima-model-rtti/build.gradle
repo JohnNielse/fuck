@@ -4,4 +4,6 @@ plugins {
 
 dependencies {
     api project(':platform-model')
+
+    api 'net.fornwall:jelf:0.9.0'
 }

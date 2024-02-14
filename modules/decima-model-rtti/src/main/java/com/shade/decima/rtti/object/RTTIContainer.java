@@ -10,6 +10,8 @@ public interface RTTIContainer<T> extends Iterable<T> {
 
     void set(int index, @NotNull T value);
 
+    void add(@NotNull T value);
+
     void insert(int index, @NotNull T value);
 
     void remove(int index);
